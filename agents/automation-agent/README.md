@@ -20,4 +20,9 @@ Example `.prosto-automations.json`:
 
 Commands must be argument arrays. Shell command strings are rejected.
 
-Run: `prosto-automation-agent`
+Install and run from the extracted release folder:
+
+```powershell
+python -m pip install -r requirements.txt
+python server.py
+```

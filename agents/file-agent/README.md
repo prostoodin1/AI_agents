@@ -4,4 +4,9 @@ Independent read-only MCP server for bounded local file discovery.
 
 Tools: `find_files`, `search_text`, `inspect_path`.
 
-Run: `prosto-file-agent`
+Install and run from the extracted release folder:
+
+```powershell
+python -m pip install -r requirements.txt
+python server.py
+```

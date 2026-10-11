@@ -6,4 +6,9 @@ Tools: `detect_project`, `run_checks`.
 
 Running checks executes code from the selected project. Use only trusted projects.
 
-Run: `prosto-coding-agent`
+Install and run from the extracted release folder:
+
+```powershell
+python -m pip install -r requirements.txt
+python server.py
+```
