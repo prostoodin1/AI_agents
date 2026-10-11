@@ -4,14 +4,20 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "prosto-ai-agents"
-version = "0.1.0"
-description = "Read-only local MCP tools for AI coding agents"
+version = "0.2.0"
+description = "Four small, independently launched MCP agents"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 dependencies = [
   "mcp>=2.3.0,<3",
 ]
+
+[project.scripts]
+prosto-file-agent = "ai_agents.file_agent:main"
+prosto-github-agent = "ai_agents.github_agent:main"
+prosto-coding-agent = "ai_agents.coding_agent:main"
+prosto-automation-agent = "ai_agents.automation_agent:main"
 
 [project.optional-dependencies]
 dev = [
